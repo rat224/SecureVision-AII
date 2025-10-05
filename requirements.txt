@@ -1,0 +1,5 @@
+gradio
+pandas
+plotly
+scikit-learn
+joblib

@@ -1,0 +1,13 @@
+# model/train_model.py
+import pandas as pd
+from sklearn.ensemble import IsolationForest
+import joblib
+
+data = pd.read_csv('dataset/cloud_logs.csv')
+X = data[['login_hour', 'failed_attempts', 'ip_risk_score']]
+
+model = IsolationForest(contamination=0.2, random_state=42)
+model.fit(X)
+
+joblib.dump(model, 'model/anomaly_detector.pkl')
+print("✅ Model trained and saved successfully.")
