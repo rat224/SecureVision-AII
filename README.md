@@ -4,7 +4,7 @@ emoji: 🛡️
 colorFrom: indigo
 colorTo: blue
 sdk: gradio
-sdk_version: "5.4"
+sdk_version: "4.44.0"
 app_file: app.py
 pinned: false
 ---
@@ -23,3 +23,4 @@ SecureVision.AI is an AI-powered dashboard that detects suspicious login behavio
 Python, Gradio, Pandas, Plotly, Scikit-learn, Joblib
 
 Developed by [rat224](https://huggingface.co/rat224)
+
